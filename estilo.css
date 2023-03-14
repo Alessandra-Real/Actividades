@@ -1,0 +1,27 @@
+body{
+    background: #df1a1a;
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    border: 60%;
+    padding: 5%;
+    opacity: 1%;
+    
+}
+img:hover{
+    opacity: 0.5;
+}
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+

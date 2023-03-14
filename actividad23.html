@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <article>
+
+        <div class="izquierda">
+            <p id="motaizquierda">
+            Notas de CSS nivel 3
+            </p>
+        </div>
+        <div class="derecha">
+            <aside id="nota1">
+                La especificación del w3c para el modelo de posicionamiento
+                aún se encuentra a nivel de vorrador de trabajo y puede consultarse
+                en el sitio
+            </aside>
+        </div>
+        <div class="centro">
+            <h1>posicionamiento</h1>
+            <header>
+                CSS permite especificar las posiciones del texto y otros elementos.
+                Cualquier elemento del árbol de documentos e puede organizar de manera
+                independiente al orden del documento.
+            </header>
+            <section>
+                <h2>El Viewport</h2>
+                <p class="normal, inicial">
+                    Los agentes de usuario para medios continuos (navegadores)
+                    generalmente ofrecen al usuario una vista (ventana o áreade visualizac ión de la pantalla)
+                    a través de la cual los usuarios consultan el documento. Los navegadores pueden cambiar el tamañodel documento cuando
+                    cambia el tamaño del <em class="termino">viewport</em>
+
+                </p>
+
+                <p class="normal">
+                    Cuando la ventana es menor que el área del lienzo
+                    en el que se representa el documento, el agente de usuario puede ofrecer un mecanimso de desplazamiento.
+                    Como máximo hay un <em class="termino">viewport</em> por cada lienzo, pero los navegadores pueden procesar más de un lienzo
+                    (es decir, proporcionar diferentes vistas del mismo documento).
+                </p>
+
+
+            </section>
+
+            <section>
+                <h2>Bloques contenedores</h2>
+                <p class="normal inicial">
+                    La posición y tamaño de la caha de un elemento se calculan 
+                    con respecto a los bordes de una caja rectangular llamada <em class="termino">bloque de contención</em>
+                    En general, las cajas actúan como bloques contenedores para las cajas 
+                    descendientes, decimos que una caja establece el bloque contenedor 
+                    para sus descendientes. La frase "bloque contenedor de la caja"
+                    significa "el bloque contenedor en el que vive la caja",
+                    no el que genera.
+                </p>
+
+                <p class="normal">
+                    A cada caja se le asigna una posición con respecto a su bloque
+                    contenedor, pero no es contenida por el, ya que puede desbordarlo.
+
+                </p>
+
+                <p class="normal">
+                    La posición y el tamaño de la caja de un elemento (s) a veces se calculan con 
+                    la relación al bloque contenedor del elemento.
+                    El bloque contenedor de un elemento estático o relativo se define en el modelo de la caja. 
+                    Para los valores
+                    <em class="valor">fixed</em>, <em class="valor">absolute</em>, <em class="valor">center</em>
+                    y <em class="valor">page</em> para la propiedad <em class="propiedad">position</em> se define de la 
+                    siguiente forma:
+                </p>
+
+                <ol class="listanivel1">
+                    <li class="itemnivel1">
+                        <em class="valor">Fixed</em>: El bloque contenedor es establecido por el <em class="termino">viewport</em>
+                        en el caso de los medios continuos o el área de la página en el caso de los medios
+                        paginados. Las cajas no se mueven cuando se hace el desplazamiento (scrolling) por el documento.
+                    </li>
+                     <li class="itemnivel1">
+                        <em class="valor">Absolute</em>: El bloque contenedor se establece con la base en el ancestro
+                        más cercano, siguiendo las siguientes reglas:
+                        <ol class="itemnivel2">
+                            <li class="itemnivel2">
+                                Si el ancestro es de nivel bloque, el bloque contenedor lo conforma el relleno del ancestro.
+                            </li>
+                            <li class="itemnivel2">
+                                Si el ancestro es a nivel inline, el bloque contenedor depende de la propiedad 
+                                <em class="propiedad">direction</em> del ancestro: 
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </article>
+</body>
+</html>
