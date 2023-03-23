@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box ; 
+   
+}
+.contenedor{
+    width: 1000px;
+    margin: 15px auto;
+    overflow: hidden;
+}
+body{
+    background: #4a465b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+header{
+    background:#fff ;
+}
+header nav{
+   width:100% ; 
+   overflow: hidden;
+}
+header nav ul li {
+    float: left;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding: 15px 20px;
+}
+header nav ul li a:hover{
+    background: #000;
+    color: #fff;
+}
+.main{
+    width: 700px; 
+    background: #fff;
+    float: left;
+}
+.main.imagen{
+    width: 100%;
+}
+.main.imagen img{
+    width: 100%;
+    vertical-align: top;
+}
+.main.publicacion{
+    padding: 45px;
+}
+.main.publicacion article h2{
+    margin-bottom:15px ;
+    line-height: 25px;
+}
+aside{
+    width: 300px;
+    background: #161f26;
+    padding: 20px;
+    color: #fff;
+    float: left;
+}
+
+aside .widget{
+    margin-buttom: 15px;
+
+}
+
+aside .widget.titulo{
+    color: orange;
+    border-bottom: 2px solid rgb(red, green, blue);
+    margin-bottom: 15px;
+}
+
+aside .widget ul{
+    list-style: none;
+}
+
+aside .widget ul li{
+    border-bottom: 2px solid rgba(red, green, blue, alpha);
+    padding: 12px 0;
+}
+
+aside .widget ul li a{
+    color:aliceblue;
+    text-decoration: none;
+}
+
+aside .widget ul li a:hover{
+color:rgba(red, green, blue, alpha);
+}
+
+aside .widget p{
+    line-height: 25px;
+}
+
+footer{
+    width: 70%;
+    background: #000;
+    color:aqua
+    text-align:center;
+    padding:12px 0;
+    overflow:hidden;
+}
+
+@media (max-width:750px){
+    body{
+        background-color:#000;
+    }
+    header{
+        background: #161f26;
+    }
+    header nav ul li a{
+        color: #fff;
+    }
+    header nav ul li a:hover{
+        background-color: #fff;
+        color: #000 ;
+    }
+    header nav ul li{
+        float: right;
+    }
+    .main .publicacion article h2{
+        color: aliceblue;
+        border-bottom: 1px solid #fff;
+    }
+    .main{
+        width: 100%;
+        background: #161f26;
+        color: white;
+    }
+    aside{
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <header>
+            <div>
+               
+                <nav>
+                    <ul>
+                        <li >
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#">Galería</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div class="imagen">
+                <img src="universo.jpg">
+            </div>
+                <article class="publicacion">
+                    <h2>Título del artículo 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi fuga beatae eos quaerat autem pariatur sit exercitationem recusandae quam eveniet adipisci architecto perferendis ad quo molestias eaque dolorum, officia voluptatibus! 
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam. Laborum corporis assumenda dolore, amet cum corrupti quidem error provident harum debitis ipsam tenetur doloribus natus quia quaerat vero eius.</p>
+                    <br>
+                    <h2>Título del artículo 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi fuga beatae eos quaerat autem pariatur sit exercitationem recusandae quam eveniet adipisci architecto perferendis ad quo molestias eaque dolorum, officia voluptatibus! 
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, numquam. Laborum corporis assumenda dolore, amet cum corrupti quidem error provident harum debitis ipsam tenetur doloribus natus quia quaerat vero eius.</p>
+                </article>
+            </section>
+        </section>
+        <aside>
+            <div class="widget">
+                <h3 class="titulo">
+                    Artículos destacados
+                </h3>
+
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></li>
+                </ul>
+            </div>
+            <div class="witget">
+                <h3 class="titulo">información</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati placeat maxime fugit mollitia necessitatibus laborum natus recusandae architecto nam veritatis accusamus adipisci perspiciatis unde ipsa explicabo inventore sunt, ex quae.</p>
+            </div>
+        </aside>
+        <footer>
+            <p>nombre 2023 - Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>

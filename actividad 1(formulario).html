@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+body{
+background-color: rgb(243, 18, 18);
+}
+
+form{
+    position : relative;
+  width  : 740px;
+  height : 498px;
+  margin : 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  background : #FFF url(background.jpg);
+  display  : grid;
+  grid-gap : 20px;
+  grid-template-columns : repeat(2, 1fr);
+  grid-template-rows    : 10em 1em 1em 1em;
+}
+        
+    </style>
+</head>
+<body>
+    <form>
+
+        <label for="nombre">Ingresa tu nonmbre: </label>
+        <input type="text" value="nombre">
+
+        <br>
+
+        <label for="apellido">Ingresa tu apellido: </label>
+        <input type="text" value="apellido">
+
+        <br>
+
+        <label for="numero">Ingresa tu número de celular: </label>
+        <input type="number" value="numero">
+
+        <br>
+
+        <label for="edad">Ingresa tu edad: </label>
+        <input type="number" value="edad">
+
+        <br>
+
+        <label for="color">Seleccione el color de su sección:  </label>
+        <input type="color" value="color">
+
+        <br>
+
+        <label for="submit">Enviar</label>
+        <input type="submit" id="submit">
+        
+    </form>
+</body>
+</html>
